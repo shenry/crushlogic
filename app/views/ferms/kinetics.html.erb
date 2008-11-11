@@ -1,0 +1,11 @@
+<p><strong>Enter Brix and Temps</strong></p>
+<% form_tag :action => 'create' do -%>
+	<% @kinetics.each do |k| -%> <!-->#this all belongs in a partial -->
+		<div class='kinetic'>
+			<%= "Tk 120#{k} 8ZITEL-#{k}" %>&nbsp;
+			Brix <%= text_field_tag nil, '', :size => 2 %>&nbsp;
+			Temp <%= text_field_tag nil, '', :size => 2 %>
+		</div>
+	<% end -%>
+	<%= submit_tag 'Enter Brix and Temps' %>
+<% end -%>

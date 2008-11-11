@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tank: MyString
+  blend: MyString
+  tons: 1.5
+  crush_date: 2008-10-30
+
+two:
+  tank: MyString
+  blend: MyString
+  tons: 1.5
+  crush_date: 2008-10-30

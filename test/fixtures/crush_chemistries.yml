@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  brix: 1.5
+  ta: 1.5
+  ph: 1.5
+  nh3: 1.5
+
+two:
+  brix: 1.5
+  ta: 1.5
+  ph: 1.5
+  nh3: 1.5
