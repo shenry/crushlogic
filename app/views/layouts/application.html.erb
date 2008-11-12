@@ -4,9 +4,6 @@
 	  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 		<%= stylesheet_link_tag :all %>
 		<%= javascript_include_tag "niftycube.js" %>
-		<!--[if lt IE 7.]>
-		<script defer type="text/javascript" src="javascripts/pngfix.js"></script>
-		<![endif]-->
 		<script type="text/javascript">
 			window.onload=function(){
 			Nifty("ul#nav a","small transparent top");
@@ -15,7 +12,15 @@
 	</head>
 	<body>
 		<div id="banner">
-			<span id="beta"><%= image_tag "beta.png" %></span>
+			<span style="width:87px;height:87px;position:absolute;top:0;left:0;display:inline-block;
+			/* the height and width should match those of the image */
+			filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='varyAlpha.png');
+			/* apply the background image with Alpha in IE5.5/Win. The src should match that of the image */
+			"><img style="
+			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+			/* make the real image fully transparent in IE5.5/Win, so the Alpha image can show through */
+			" src="images/beta.png" width="87" height="87" border="0" alt=""></span>
+			<!--span id="beta"><%= image_tag "beta.png" %></span-->
 			<span id="logo">crush<span id="logic">logic</span></span>
 			<div id="menu"><%= render :partial => 'shared/menu' %></div>
 			<span id="login"><%= render :partial => 'shared/login' %></span>
