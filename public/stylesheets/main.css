@@ -1,5 +1,5 @@
 html { background: #575757; } /*8F8F8F*/
-body { margin: 0; font-family: arial, helvetica, sans-serif; }
+body { margin: 0; font-family: arial, helvetica, sans-serif;}
 
 #banner { 	
 	height: 60px; 
@@ -34,9 +34,18 @@ ul#nav a { float: left; width: 6em; padding: 4px 0; background: #D6E1D5; text-de
 ul#nav a:hover { background: #22380F; color: #D6E1D5; } /*4F6A4D*/
 ul#nav li.activelink a, ul#nav li.activelink a:hover { background: #FFF; }
 
-#yield { margin: 0 20px 0 20px; padding: 5px 20px 40px 20px; background: white; border: 2px solid #999999; border-top: none;}
+#yield { 
+	margin: 0 20px 0 20px; 
+	padding: 5px 20px 40px 20px; 
+	background: white; 
+	border: 2px solid #999999; 
+	border-top: none;
+	font-size: 0.9em;
+	}
 
-.kinetic { padding: 5px 0; font-size: 0.9em;}
+.kinetic { margin: 0 0 0 10px; font-size: 0.9em; padding: 5px;}
+.kinetic input { margin: 10px 2px 2px 0; }
+.kinetics_container { border-bottom: 2px solid #999999; margin-bottom: 5px; padding-bottom: 5px;}
 
 table { border-collapse: collapse; }
 table tr { }

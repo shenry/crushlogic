@@ -1,11 +1,16 @@
 <p><strong>Enter Brix and Temps</strong></p>
 <% form_tag :action => 'create' do -%>
-	<% @kinetics.each do |k| -%> <!-->#this all belongs in a partial -->
-		<div class='kinetic'>
-			<%= "Tk 120#{k} 8ZITEL-#{k}" %>&nbsp;
-			Brix <%= text_field_tag nil, '', :size => 2 %>&nbsp;
-			Temp <%= text_field_tag nil, '', :size => 2 %>
-		</div>
+	<% @kinetics.in_groups_of(3, false) do |kins| -%>
+		<span class="kinetics_container">
+			<% kins.each do |k| -%> <!-->#this all belongs in a partial -->
+				<span class='kinetic'>
+					<%= "Tk 120#{k} 8ZITEL-#{k}" %>&nbsp;
+					Brix <%= text_field_tag nil, '', :size => 2 %>&nbsp;
+					Temp <%= text_field_tag nil, '', :size => 2 %>
+				</span>
+			<% end -%>
+		</span>
+		<br />
 	<% end -%>
-	<%= submit_tag 'Enter Brix and Temps' %>
+	<p><%= submit_tag 'Enter Brix and Temps' %></p>
 <% end -%>

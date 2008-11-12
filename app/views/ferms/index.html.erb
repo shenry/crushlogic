@@ -3,6 +3,7 @@
 <table>
 	<tr>
 		<th>Crush Date</th>
+		<th>Ferm Days</th>
 		<th>Tank</th>
 		<th>Blend</th>
 		<th>Tons</th>
@@ -10,15 +11,18 @@
 		<th>TA</th>
 		<th>pH</th>
 		<th>NH<sub>3</sub></th>
+		<th>Malic</th>
 	</tr>
 	<% i = 0 %>
 	<% 10.times do |f| -%>
 		<tr>
 			<td><%= (Time.now.to_date + i).strftime("%m/%d/%y") %></td>
+			<td></td>
 			<td><%= 1201 + i %></td>
 			<td><%= "8ZITEL-" + i.to_s %></td>
 			<td><%= (rand 500.to_f) / 10.to_f %></td>
 			<td><%= (rand 300.to_f + i) / 10.to_f %></td>
+			<td></td>
 		</tr>
 		<% i += 1 %>
 	<% end -%>
