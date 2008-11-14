@@ -23,6 +23,7 @@ body { margin: 0; font-family: arial, helvetica, sans-serif;}
 #sub_menu ul li  { display: inline; font-size: 1.2em; padding-right: 0.75em; }
 #sub_menu a { font-weight : normal; color: #538925; }
 #sub_menu a:hover { border-bottom: 2px solid; }
+#sub_menu input { margin: 0; }
 
 a { text-decoration: none; color: #22380F; }
 #menu { padding-top: 36px; /*width: 100px;*/ font-size: 0.85em; }
@@ -43,11 +44,16 @@ ul#nav li.activelink a, ul#nav li.activelink a:hover { background: #FFF; }
 	font-size: 0.9em;
 	}
 
-.kinetic { margin: 0 0 0 10px; font-size: 0.9em; padding: 5px;}
+.kinetic { margin: 0 20px 0 20px; font-size: 0.9em; padding: 5px;}
 .kinetic input { margin: 10px 2px 2px 0; }
 .kinetics_container { border-bottom: 2px solid #999999; margin-bottom: 5px; padding-bottom: 5px;}
 
 table { border-collapse: collapse; }
-table tr { }
-table th { width: 60px; vertical-align: bottom; text-align: left; border-bottom: 1px solid black; }
-table td { padding: 3px 15px 0 0; }
+table a:hover { background: #D6E1D5; }
+table tr.hover:hover { background: #D6E1D5; }
+table th { width: 60px; vertical-align: bottom; text-align: center; border-bottom: 1px solid black; }
+table th.no_border { border-bottom: none;}
+table th.dashed_border { border-bottom: 1px dashed #575757; font-size: 0.85em; color: #575757; }
+table th.thin_col { width: 20px; }
+table th.right { border-right: 1px dashed #575757; }
+table td { padding: 3px 0 0 0; text-align: center; }

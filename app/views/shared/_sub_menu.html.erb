@@ -4,5 +4,11 @@
 		<li>All</li>
 		<li><%= link_to 'Active' %></li>
 		<li><%= link_to 'Pressed' %></li>
+		<li>Select and option:</li>
+		<li>
+			<% form_tag do %>
+				<%= select 'option', nil, [1,2,3] %>
+			<% end %>
+		</li>
 	</ul>
 </div>
