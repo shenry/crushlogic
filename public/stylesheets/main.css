@@ -25,7 +25,7 @@ body { margin: 0; font-family: arial, helvetica, sans-serif;}
 #sub_menu a:hover { border-bottom: 2px solid; }
 #sub_menu input { margin: 0; }
 
-a { text-decoration: none; color: #22380F; }
+a { text-decoration: none; color: #2D692D; } /* #2D692D */
 #menu { padding-top: 36px; /*width: 100px;*/ font-size: 0.85em; }
 ul#nav, ul#nav li { list-style-type: none; margin: 0; padding: 0; }
 ul#nav { margin-left: 100px; width: 650px; }
@@ -49,11 +49,20 @@ ul#nav li.activelink a, ul#nav li.activelink a:hover { background: #FFF; }
 .kinetics_container { border-bottom: 2px solid #999999; margin-bottom: 5px; padding-bottom: 5px;}
 
 table { border-collapse: collapse; }
-table a:hover { background: #D6E1D5; }
-table tr.hover:hover { background: #D6E1D5; }
+table a:hover { /*text-decoration: underline;*/ font-weight: bold; } /*229100 FOR COLOR */
+table tr.hover:hover { background: #FBEC5D; } /*FFFF65*/
 table th { width: 60px; vertical-align: bottom; text-align: center; border-bottom: 1px solid black; }
 table th.no_border { border-bottom: none;}
 table th.dashed_border { border-bottom: 1px dashed #575757; font-size: 0.85em; color: #575757; }
 table th.thin_col { width: 20px; }
 table th.right { border-right: 1px dashed #575757; }
 table td { padding: 3px 0 0 0; text-align: center; }
+
+#crush_details { float: left; width: 200px; border: 2px solid red; margin-right: 20px; text-align: center; }
+#crush_details table { margin-right: auto; margin-left: auto; }
+#crush_details table td { padding: 2px 5px; }
+td.left { text-align: left; }
+td.right { text-align: right; }
+#title { width: 100%; border-bottom: 2px solid #0A1004; font-size: 1.1em; font-weight: bold; }
+#ferm_graph { float: left; /*width: 400px; border: 2px solid blue;*/ }
+#daily_details { clear: both; }

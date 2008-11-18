@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :ferms
   map.connect 'kinetics', :controller => 'ferms', :action => 'kinetics'
+  map.connect 'detail', :controller => 'ferms', :action => 'detail'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

@@ -1,3 +1,4 @@
+<% @page_title = 'crushlogic | ferms' %>
 <table>
 	<tr>
 		<th colspan=7, class='no_border'>&nbsp;</th>
@@ -31,7 +32,7 @@
 			<td></td>
 			<td><a href="#">&nbsp;</a></td>
 			<td><%= 1200 + i %></td>
-			<td><%= link_to "8ZITEL-" + i.to_s %></td>
+			<td><%= link_to "8ZITEL-" + i.to_s, '/detail' %></td>
 			<td><%= (rand 500.to_f) / 10.to_f %></td>
 			<td><%= (rand 300.to_f + i) / 10.to_f %></td>
 			<td></td>
