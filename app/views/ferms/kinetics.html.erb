@@ -1,5 +1,7 @@
 <% @page_title = 'crushlogic | kinetics' %>
-<p><strong>Enter Brix and Temps</strong></p>
+<div id='title_bar'>
+	<span id='title_sub'>Enter Brix and Temps</span>
+</div>
 <% form_tag :action => 'create' do -%>
 	<% @kinetics.in_groups_of(3, false) do |kins| -%>
 		<span class="kinetics_container">

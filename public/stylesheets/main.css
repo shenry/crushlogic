@@ -1,9 +1,10 @@
-html { background: #575757; } /*8F8F8F*/
-body { margin: 0; font-family: arial, helvetica, sans-serif;}
+html { background: #575757; padding-bottom: 60px;} /*8F8F8F*/
+#heroku_props { position: fixed; bottom: 0; right: 0; padding-right: 20px; }
+body { margin: 0 20px; font-family: arial, helvetica, sans-serif;}
 
 #banner { 	
 	height: 60px; 
-	margin: 0 20px 0 20px; 
+	/*margin: 0 20px 0 20px;*/
 	border-left: 2px solid #999999;
 	border-right: 2px solid #999999;
 	padding-top: 5px; 
@@ -36,17 +37,16 @@ ul#nav a:hover { background: #22380F; color: #D6E1D5; } /*4F6A4D*/
 ul#nav li.activelink a, ul#nav li.activelink a:hover { background: #FFF; }
 
 #yield { 
-	margin: 0 20px 0 20px; 
-	padding: 5px 20px 40px 20px; 
 	background: white; 
-	border: 2px solid #999999; 
+	border: 2px solid #999999;
 	border-top: none;
 	font-size: 0.9em;
+	padding: 5px 20px 60px 20px;
 	}
 
 .kinetic { margin: 0 20px 0 20px; font-size: 0.9em; padding: 5px;}
 .kinetic input { margin: 10px 2px 2px 0; }
-.kinetics_container { border-bottom: 2px solid #999999; margin-bottom: 5px; padding-bottom: 5px;}
+.kinetics_container { border-bottom: 1px solid #8A8A8A; margin-bottom: 5px; padding-bottom: 5px;}
 
 table { border-collapse: collapse; }
 table a:hover { /*text-decoration: underline;*/ font-weight: bold; } /*229100 FOR COLOR */
@@ -58,11 +58,20 @@ table th.thin_col { width: 20px; }
 table th.right { border-right: 1px dashed #575757; }
 table td { padding: 3px 0 0 0; text-align: center; }
 
-#crush_details { float: left; width: 200px; border: 2px solid red; margin-right: 20px; text-align: center; }
+#crush_details { float: left; margin-right: 80px; text-align: center; }
 #crush_details table { margin-right: auto; margin-left: auto; }
 #crush_details table td { padding: 2px 5px; }
 td.left { text-align: left; }
 td.right { text-align: right; }
-#title { width: 100%; border-bottom: 2px solid #0A1004; font-size: 1.1em; font-weight: bold; }
-#ferm_graph { float: left; /*width: 400px; border: 2px solid blue;*/ }
+#title_bar { padding: 5px 0 5px 10px; background: #8A8A8A; margin: 10px 0 15px 0; }
+#title_container { padding-right: 300px; }
+#title_header { font-size: 2em; color: #FFF; font-weight: bold; vertical-align: middle; }
+#title_sub a { color: #D6E1D5; }
+#title_sub a:hover { color: white; }
+.strong_header_link { color: white; font-weight: bold; font-size: 1.1em; }
+#title_sub { font-size: 1.1em; color: #D6E1D5; padding-left: 10px; vertical-align: middle; }
+#inner_cell { margin: 0 0 0 400px; padding: 0; width: 200px; color: #D6E1D5; font-size: 1.2em; vertical-align: middle; font-weight: lighter; } 
+#inner_cell p { margin: 0; padding: 0 10px 0 3px; display: inline; font-weight: bold; color: white; }
+#inner_cell sub { font-size: 0.7em; bottom: 0.5em; }
+#ferm_graph { float: left; margin-top: 0px; }
 #daily_details { clear: both; }

@@ -7,6 +7,8 @@
 		<script type="text/javascript">
 			window.onload=function(){
 			Nifty("ul#nav a","small transparent top");
+			Nifty("div#title_bar", "small");
+			Nifty("span#inner_title", "small");
 			}
 		</script>
 		<title><%= @page_title || 'crushlogic' %></title>
@@ -27,7 +29,8 @@
 			<span id="login"><%= render :partial => 'shared/login' %></span>
 		</div>
 		<div id="yield">
-			<%= yield %>
+				<%= yield %>
 		</div>
 	</body>
+	<div id='heroku_props'><%= image_tag 'heroku.png' %></div>
 </html>

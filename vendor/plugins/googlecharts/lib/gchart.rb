@@ -16,7 +16,7 @@ class Gchart
   @@file_name = 'chart.png'
   
   attr_accessor :title, :type, :width, :height, :horizontal, :grouped, :legend, :data, :encoding, :max_value, :bar_colors,
-                :title_color, :title_size, :custom, :axis_with_labels, :axis_labels, :bar_width_and_spacing, :id, :alt, :class
+                :title_color, :title_size, :custom, :axis_with_labels, :axis_labels, :bar_width_and_spacing, :id, :alt, :class, :line_weight
     
   # Support for Gchart.line(:title => 'my title', :size => '400x600')
   def self.method_missing(m, options={})
@@ -73,6 +73,16 @@ class Gchart
   
   def size
     "#{@width}x#{@height}"
+  end
+  
+  def line_weight=(object)
+    if object.is_a?(String)
+      @line_weight = string
+    elsif object.is_a?(Array)
+      @line_weight = object[0].join(",").concat("|").concat(object[1].join(","))
+    else
+      return false
+    end
   end
   
   # Sets the orientation of a bar graph
@@ -171,6 +181,10 @@ class Gchart
   
   def set_size
     "chs=#{size}"
+  end
+  
+  def set_line_weight
+    "chls=#{line_weight}"
   end
   
   def set_data
@@ -378,6 +392,8 @@ class Gchart
       # Set the graph size  
       when '@width'
         set_size unless @width.nil? || @height.nil?
+      when '@line_weight'
+        set_line_weight
       when '@type'
         set_type
       when '@title'
